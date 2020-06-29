@@ -1,6 +1,17 @@
 # TwitterScraping
 Scripts for scraping twitter for #covid19dk conversations.
 
+__Dataset:__ [Here](https://github.com/EstherChemnitz/TwitterScraping/blob/master/covid19-conversations-formatted.xlsx)
+
+__Steps to reproduce:__
+
+1. Install `twint` and `pandas` through `pip`
+1. Run `scrape.py` to get all #covid19dk tweets
+2. Run `scrape-all.py` to get all danish tweets from same time (This takes a while)
+3. Run `merge-csvs.py` to get 2 big data files
+4. Run `filter-conversations.py` to group by conversation id and export all #covid19dk conversations to single .csv
+
+
 __Data selection process:__
 
 We use 'twint', an unofficial python library that scrapes the twitter website, bypassing the 7-day restriction on historical tweets imposed by the official twitter API.
